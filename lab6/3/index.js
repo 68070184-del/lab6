@@ -8,7 +8,7 @@ fetch('questionAnswerData.json')
         q.appendChild(document.createTextNode(makeQuestion))
         form.appendChild(q)
         
-        Object.keys(quiz.answers).slice(0,-1).forEach((choice,index) => {
+        Object.keys(quiz.answers).slice(0,-1).forEach(choice => {
             const aLab = document.createElement("label")
             const a = document.createElement("input")
             const br = document.createElement("br")
